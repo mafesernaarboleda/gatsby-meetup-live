@@ -76,6 +76,16 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: 'gatsby-source-apiserver',
+      options: {
+        typePrefix: 'internal',
+        url: 'https://scrapp-slide.herokuapp.com/api/scrap/find/mafeserna',
+        method: 'get',
+        name: 'slides',
+      },
+    },
+    `gatsby-plugin-sass`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
